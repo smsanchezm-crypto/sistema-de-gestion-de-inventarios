@@ -1,0 +1,38 @@
+# Sistema de Gestión de Inventarios
+
+Sistema desarrollado en Python que permite gestionar el inventario de una tienda mediante consola, aplicando Programación Orientada a Objetos, organización modular y persistencia de datos en archivos de texto.
+
+## Funcionalidades
+
+- Añadir, eliminar y actualizar productos
+- Buscar productos por nombre (coincidencia parcial)
+- Listar todos los productos del inventario
+- Persistencia automática en `inventario.txt`
+- Manejo de excepciones en lectura y escritura de archivos
+
+## Estructura del proyecto
+```
+sistema-inventario/
+├── modelos/
+│   └── producto.py       # Clase Producto con atributos, getters y setters
+├── servicios/
+│   └── inventario.py     # Clase Inventario con lógica de gestión y manejo de archivos
+├── main.py               # Menú interactivo en consola
+├── .gitignore
+└── README.md
+```
+
+## Requisitos
+
+- Python 3.14.3
+
+## Ejecución
+
+Desde la carpeta raíz del proyecto:
+```bash
+python main.py
+```
+
+## Notas
+
+El archivo `inventario.txt` se genera automáticamente al agregar el primer producto. No es necesario crearlo manualmente.
